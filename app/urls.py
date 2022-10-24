@@ -6,5 +6,5 @@ from django.views.decorators.csrf import ensure_csrf_cookie
 urlpatterns = [
     path('', hm, name='index'),
     path('login', ensure_csrf_cookie(views.LoginView.as_view())),
-    path('', include('django.contrib.auth.urls')),
+    path('logout', views.LogoutView.as_view()),
 ]

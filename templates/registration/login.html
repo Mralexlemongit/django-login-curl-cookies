@@ -1,1 +1,7 @@
 Please Login
+<form method="post" action="/login">
+    {% csrf_token %}
+    {{ form }}
+    <br>
+    <button type="submit">sumbit</button>
+</form>

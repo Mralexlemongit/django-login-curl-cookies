@@ -14,7 +14,13 @@ $ .\venv\script\activate
 (venv) $ python manage.py runserver
 ```
 
-Next, run the script to test the login and index page:
+Create a superuser
+
+``` bash
+(venv) $ python manage.py createsuperuser
+```
+
+Next, modify the username/password and run the 'authenticate.sh' script to test the login and index page:
 
 ``` bash
 $ ./authenticate.sh
